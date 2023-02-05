@@ -6,6 +6,10 @@ import tauriLogo from "../assets/tauri.svg";
 import nextLogo from "../assets/next.svg";
 import honeycomb from "../assets/honeycomb.png";
 import bee from "../assets/bee.png";
+
+//link
+import Link from 'next/link'
+
 import {ArrowPathRoundedSquareIcon, AcademicCapIcon} from '@heroicons/react/24/solid'
 
 function App() {
@@ -26,6 +30,8 @@ function App() {
         <div className="text-4xl font-bold text-gray-900 ml-2">CombConvert</div>
       </div>
       <div className="flex flex-col">
+        {/* link go to convert */}
+        <Link href="/convert">
           <button className="p-3 rounded-lg max-w-xs inline-flex items-center hover:bg-gray-50">
             <div className="p-2 shadow-md rounded-lg mr-5">
               <ArrowPathRoundedSquareIcon className="w-8"/>
@@ -35,6 +41,7 @@ function App() {
               <div className="text-gray-500">Convert your videos </div>
             </div>
           </button>
+        </Link>
           <button className="p-3 rounded-lg max-w-xs inline-flex items-center hover:bg-gray-50">
             <div className="p-2 shadow-md rounded-lg mr-5">
               <AcademicCapIcon className="w-8"/>
